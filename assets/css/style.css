@@ -1271,17 +1271,26 @@ gap:1rem;
 
 /* For large devices */
 @media screen and (min-width: 1024px){
+    .container{
+        max-width: 70%;
+    }
     .header,
     .main,
     .footer_container{
         padding: 0;
     }
-
+    
+    .home_content{
+        display: flex;
+        justify-content: space-between;
+    }
     .home_blob{
         width: 320px;
     }
     .home_social{
-        transform: translateX(-6rem);
+       position: fixed;
+       left: 4rem;
+        /* transform: translateX(-6rem); */
     }
 
     .services_container{
