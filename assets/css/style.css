@@ -735,7 +735,9 @@ gap:1rem;
     color: var(--first-color);
     margin-right: var(--mb-0-25);
 }
-
+.services_modal-text{
+    color: var(--title-color);
+}
 
 /* Active Modal */
 .active-modal{
@@ -765,6 +767,7 @@ gap:1rem;
 
 .portfolio_description{
     margin-bottom: var(--mb-0-75);
+    color: var(--text-color);
 }
 
 .portfolio_button:hover .button_icon{
@@ -851,6 +854,10 @@ gap:1rem;
 .testimonial_name{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+}
+
+.testimonial_description{
+    color: var(--text-color);
 }
 
 .testimonial_client{
