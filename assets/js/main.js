@@ -95,6 +95,9 @@ modalCloses.forEach((modalCloses) => {
 let swiperPortfolio = new Swiper(".portfolio_container", {
     cssMode: true,
     loop: true,
+    autoplay: {
+        delay: 5000,
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -105,25 +108,15 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
     }
 });
 
-/*==================== PORTFOLIO Modal  ====================*/
-let swiperModalPortfolio = new Swiper(".modal_portfolio-banners", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    }
-});
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper(".testimonial_container", {
     loop: true,
     grabCursor: true,
     spaceBetween: 48,
+    autoplay: {
+        delay: 4000,
+    },
 
     pagination: {
         el: ".swiper-pagination",
