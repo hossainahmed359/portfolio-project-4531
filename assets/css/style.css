@@ -366,6 +366,12 @@ gap:1rem;
     background-color: var(--first-color-alt);
 }
 
+.portfolio_button-icon{
+    font-size: 1.25rem;
+    margin-right: var(--mb-0-5);
+    transition: 0.3s;
+}
+
 .button_icon{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
@@ -603,7 +609,7 @@ gap:1rem;
 
 .qualification_data{
     display: grid;
-    grid-template-columns: 2fr max-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
@@ -672,6 +678,7 @@ gap:1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.portfolio-icon,
 .services_icon{
     display: block;
     font-size: 1.5rem;
@@ -718,10 +725,12 @@ gap:1rem;
     border-radius: 0.5rem;
 }
 
+
 .services_modal-services{
     row-gap: 1rem;
 }
 
+.portfolio_text-list,
 .services_modal-service{
     display: flex;
 }
@@ -741,10 +750,12 @@ gap:1rem;
     cursor: pointer;
 }
 
+.portfolio_text-icon,
 .services_modal-icon{
     color: var(--first-color);
     margin-right: var(--mb-0-25);
 }
+.portfolio_text-paragraph,
 .services_modal-text{
     color: var(--title-color);
 }
@@ -770,9 +781,18 @@ gap:1rem;
     justify-self: center;
 }
 
+.portfolio_data{
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio_title{
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_text-paragraph{ 
+    color: var(--text-color);
 }
 
 .portfolio_description{
@@ -780,8 +800,17 @@ gap:1rem;
     color: var(--text-color);
 }
 
+.portfolio_text{
+    color: var(--text-color);
+}
+
 .portfolio_button:hover .button_icon{
     transform: translateX(0.25rem);
+}
+
+.portfolio_links-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--mb-0-75);
 }
 
 .swiper-button-prev::after,
@@ -949,7 +978,7 @@ gap:1rem;
 }
 
 .footer_title{
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
@@ -1017,20 +1046,17 @@ gap:1rem;
 }
 
 /*========== SCROLL BAR ==========*/
-::-webkit-scrollbar{
+ ::-webkit-scrollbar{
     width: 0.60rem;
     background-color: var(--scroll-bar-color);
     border-radius: 0.5rem;
 }
 
-::-webkit-scrollbar-button{
-    background-color: var(--scroll-thumb-color);
-    border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background-color: var(--text-color-light);
-}
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    
+} 
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
@@ -1072,6 +1098,18 @@ gap:1rem;
         padding: 0 0.5rem;
     }
 
+    .portfolio_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio_links-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+
     .project_img{
         width: 200px;
     }
@@ -1107,12 +1145,14 @@ gap:1rem;
 
     .about_container,
     .skills_container,
-    .portfolio_content,
     .project_container,
+    .portfolio_content,
     .contact_container,
     .footer_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+
     .skills_titles{
         font-size: var(--normal-font-size);
     }
@@ -1283,6 +1323,16 @@ gap:1rem;
 }
 }
 
+@media  screen and (min-width: 770px ) and (max-width: 1023px){
+    .qualification_content{
+        margin: auto;
+    }
+    .qualification_data{
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+    }
+}
+
 /* For large devices */
 @media screen and (min-width: 1024px){
     .container{
@@ -1318,11 +1368,20 @@ gap:1rem;
        margin: auto;
     }
     
+    .qualification_content{
+        margin: auto;
+    }
+    .qualification_data{
+        grid-template-columns: 1fr max-content 1fr;
+        /* column-gap: 1.5rem; */
+    }
+
     .services_container{
         grid-template-columns: repeat(3, 238px);
         justify-content: space-evenly;
     }
 
+    
     .portfolio_content{
         column-gap: 5rem;
     }
@@ -1346,5 +1405,14 @@ gap:1rem;
     }
     .contact_inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1465px) {
+    .portfolio_data{
+        gap: 1.5rem;
+    }
+    .portfolio_links-container{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
