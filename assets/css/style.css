@@ -675,6 +675,7 @@ gap:1rem;
 }
 
 .services_content:hover{
+    transform: translateY(-1.025rem);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -1415,4 +1416,5 @@ gap:1rem;
     .portfolio_links-container{
         grid-template-columns: repeat(3, 1fr);
     }
+    
 }
