@@ -1267,12 +1267,18 @@ gap:1rem;
     .footer_copy{
         margin-left:  4.5rem;
     }
+
+    /* Show scroll */
+.show-scroll{
+    bottom: 2rem;
+    right: 2rem;
+}
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px){
     .container{
-        max-width: 70%;
+        max-width: 60%;
     }
     .header,
     .main,
@@ -1280,10 +1286,17 @@ gap:1rem;
         padding: 0;
     }
     
-    .home_content{
+    .home_content,
+    .about_container{
         display: flex;
         justify-content: space-between;
     }
+
+    .home_data,
+    .about_data{
+        width: 45%;
+    }
+
     .home_blob{
         width: 320px;
     }
@@ -1292,6 +1305,11 @@ gap:1rem;
        left: 4rem;
         /* transform: translateX(-6rem); */
     }
+
+    .home_scroll-button{
+       margin: auto;
+    }
+    
 
     .services_container{
         grid-template-columns: repeat(3, 238px);
