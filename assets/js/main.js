@@ -205,6 +205,13 @@ themeButton.addEventListener('click', () => {
 })
 
 /*==================== Send Email ====================*/
+/* 
+Email JS API keys
+service Id = portfolio_project_4531
+User ID = user_oBqomn6lmAKICKZlnXtEI
+Access Token = 8cd6ba6cabfb489251285ad5fc73020a
+ */
+
 function validate() {
     let form = document.getElementById('contact-form')
     let name = document.querySelector('.username')
