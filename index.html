@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Hossain Ahmed Madani</title>
+
+    <!--==================== Email JS ====================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_oBqomn6lmAKICKZlnXtEI");
+        })();
+    </script>
+
+    <!-- Email JS API keys
+    User ID = user_oBqomn6lmAKICKZlnXtEI
+    Access Token = 8cd6ba6cabfb489251285ad5fc73020a
+ -->
 </head>
 
 <body>
@@ -900,28 +913,28 @@
                     </div>
                 </div>
 
-                <form action="" class="contact_form grid">
+                <form action="submit" onsubmit='validate' id="contact-form" class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" required class="contact_input username">
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
+                            <input type="email" required class="contact_input email">
                         </div>
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Project</label>
-                        <input type="text" class="contact_input">
+                        <label for="" class="contact_label">Subject</label>
+                        <input type="text" class="contact_input subject">
                     </div>
                     <div class="contact_content">
                         <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input message"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="" type="submit" class="button button--flex submit">
                             Send Message
                             <i class="uil uil-message button_icon"></i>
                         </a>

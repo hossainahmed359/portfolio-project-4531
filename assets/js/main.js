@@ -203,3 +203,41 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== Send Email ====================*/
+function validate() {
+    let form = document.getElementById('contact-form')
+    let name = document.querySelector('.username')
+    let email = document.querySelector('.email')
+    let subject = document.querySelector('.subject')
+    let msg = document.querySelector('.message')
+    let submit = document.querySelector('.submit')
+
+    submit.addEventListener('click', e => {
+        e.preventDefault()
+
+        if (name.value === '' || email.value === '' || msg.value === '') {
+            alert('Oops! Input Empty')
+        }
+
+        else {
+            sendmail(name.value, email.value, subject.value, msg.value)
+            alert('Thank you for your message.')
+            console.log('message sent')
+            form.reset()
+        }
+    })
+}
+
+validate()
+
+function sendmail(name, email, subject, msg) {
+    emailjs.send("service_portfolio4531", "template_75hsapg", {
+        from_name: name,
+        subject: subject,
+        to_name: email,
+        message: `Subject: ${subject}.
+                  Content: ${msg}`,
+        reply_to: email,
+    });
+}
