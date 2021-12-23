@@ -776,10 +776,31 @@ gap:1rem;
     padding: 0 1.5rem;
 }
 
+.banner-1{
+    background-image: url("../img/portfolio-images/BikersWorld.png");
+}
+
+.banner-2{
+    background-image: url("../img/portfolio-images/Traveller.png");
+}
+
+.banner-3{
+    background-image: url("../img/portfolio-images/Dental-Care.png");
+}
+
 .portfolio_img{
-    width: 265px;
+    width: 250px;
+    height: 200px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0.5rem;
     justify-self: center;
+    transition: all 3s linear;
+}
+
+.portfolio_content:hover .portfolio_img{
+    background-position: bottom;
 }
 
 .portfolio_data{
@@ -1278,6 +1299,7 @@ gap:1rem;
 
     .portfolio_img{
         width: 320px;
+    
     }
     .portfolio_content{
         align-items: center;

@@ -96,7 +96,7 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
     cssMode: true,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 6000,
     },
     navigation: {
         nextEl: ".swiper-button-next",
