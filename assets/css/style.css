@@ -675,7 +675,6 @@ gap:1rem;
 }
 
 .services_content:hover{
-    transform: translateY(-1.025rem);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -797,6 +796,7 @@ gap:1rem;
     border-radius: 0.5rem;
     justify-self: center;
     transition: all 3s linear;
+   /*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .portfolio_content:hover .portfolio_img{
@@ -852,6 +852,8 @@ gap:1rem;
 .swiper-button-next{
     right: -0.5rem;
 }
+
+
 .swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -3.5rem;
 }
@@ -1401,7 +1403,7 @@ gap:1rem;
 
     .services_container{
         grid-template-columns: repeat(3, 238px);
-        justify-content: space-evenly;
+      /*   justify-content: space-between; */
     }
 
     
@@ -1412,12 +1414,14 @@ gap:1rem;
     .swiper-portfolio-icon{
         font-size: 3.5rem;
     }
+
     .swiper-button-prev{
         left: -3.5rem;
     }
     .swiper-button-next{
         right: -3.5rem;
     }
+
  /* .swiper-pagination-bullets{
         margin-top: 4.5rem;
     } */
@@ -1435,6 +1439,20 @@ gap:1rem;
     .portfolio_data{
         gap: 1.5rem;
     }
+
+    .swiper-button-prev{
+        left: -0.5rem;
+    }
+    .swiper-button-next{
+        right: -0.5rem;
+    }
+
+    .services_container{
+        grid-template-columns: repeat(3, 350px);
+        justify-content: space-between;
+    }
+
+
     .portfolio_links-container{
         grid-template-columns: repeat(3, 1fr);
     }

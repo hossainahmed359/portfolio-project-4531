@@ -131,7 +131,7 @@ let swiperTestimonial = new Swiper(".testimonial_container", {
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-// UNSOLVED CODE
+// *************** UNSOLVED CODE ***************
 /*
 const sections = document.querySelectorAll('section[id]')
 
