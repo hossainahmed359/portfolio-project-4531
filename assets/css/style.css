@@ -1427,6 +1427,10 @@ gap:1rem;
         margin-top: 4.5rem;
     } */
 
+    .project_img{
+        width: 300px;
+    }
+
     .contact_form{
         min-width: 460px;
         margin-right: 0;
