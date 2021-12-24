@@ -248,3 +248,23 @@ function sendmail(name, email, subject, msg) {
         reply_to: email,
     });
 }
+
+
+/* ==================== Type Writter ====================*/
+/* First */
+let text = document.getElementById('typewritter-text');
+
+let typewriter = new Typewriter(text, {
+    loop: true
+});
+
+typewriter.typeString('Frontend Developer')
+    .pauseFor(50)
+    .deleteAll()
+    .typeString('React Developer')
+    .pauseFor(50)
+    .deleteAll()
+    .typeString('Node js Developer')
+    .pauseFor(50)
+    .start();
+
