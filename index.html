@@ -44,22 +44,7 @@
         }
     </style>
 
-    <!--==================== Preloader JS ====================-->
-    <script>
-        document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                    "body").style.visibility = "hidden";
-                document.querySelector(
-                    "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
-            }
-        };
-    </script>
+
 
     <!--==================== Email JS ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -1047,6 +1032,25 @@
 
     <!-- ==================== TYPEWRITTER JS ==================== -->
     <script src="assets/js/typewritter.min.js"></script>
+
+
+
+    <!--==================== Preloader JS ====================-->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
