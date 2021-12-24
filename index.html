@@ -17,6 +17,50 @@
 
     <title>Hossain Ahmed Madani</title>
 
+    <!--==================== Preloader CSS ====================-->
+    <style>
+        #loader {
+            border: 12px solid hsl(250, 92%, 85%);
+            border-radius: 50%;
+            border-top: 12px solid hsl(250, 69%, 61%);
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+
+    <!--==================== Preloader JS ====================-->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
     <!--==================== Email JS ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -28,6 +72,9 @@
 </head>
 
 <body>
+    <!-- Website Preloader -->
+    <div id="loader" class="center"></div>
+
     <!--==================== WEBSITE STARTS HERE ====================  -->
 
     <!--==================== HEADER ====================-->
@@ -126,7 +173,7 @@
                             Computer programming is both my passion and hobby. I love coding and enjoy creating websites
                             with various technologies. I create responsive websites using MERN stack technology.
                         </p>
-                        <a download="" href="assets/pdf/HossainAhmedMadani-Resume6.pdf" class="button button--flex">
+                        <a download="" href="assets/pdf/HossainAhmedMadani-Resume.pdf" class="button button--flex">
                             Download Resume<i class="uil uil-download-alt button_icon"></i>
                         </a>
                     </div>
