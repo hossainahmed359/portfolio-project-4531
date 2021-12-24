@@ -18,6 +18,7 @@
     <title>Hossain Ahmed Madani</title>
 
     <!--==================== Preloader CSS ====================-->
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <style>
         #loader {
             border: 12px solid hsl(250, 92%, 85%);
@@ -25,11 +26,20 @@
             border-top: 12px solid hsl(250, 69%, 61%);
             width: 70px;
             height: 70px;
+            -webkit-animation: spin 1s linear infinite;
             animation: spin 1s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         }
 
         @keyframes spin {
             100% {
+                -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
             }
         }
@@ -44,7 +54,7 @@
         }
     </style>
 
-
+    <!--*************** Attention: Do no delete the code below randomly  -->
 
     <!--==================== Email JS ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -58,7 +68,9 @@
 
 <body>
     <!-- Website Preloader -->
-    <div id="loader" class="center"></div>
+    <div id="loader" class="center">
+    </div>
+
 
     <!--==================== WEBSITE STARTS HERE ====================  -->
 
