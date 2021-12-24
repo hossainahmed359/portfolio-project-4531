@@ -53,6 +53,23 @@
         }
     </style>
 
+    <!--==================== Preloader JS ====================-->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
     <!--*************** Attention: Do no delete the code below randomly  -->
 
     <!--==================== Email JS ====================-->
@@ -1037,31 +1054,12 @@
         <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
 
-    <!-- Swiper needs to be linked at first -->
+    <!-- Swiper needs to be linked before the main JS -->
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- ==================== TYPEWRITTER JS ==================== -->
     <script src="assets/js/typewritter.min.js"></script>
-
-
-
-    <!--==================== Preloader JS ====================-->
-    <script>
-        document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                    "body").style.visibility = "hidden";
-                document.querySelector(
-                    "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
-            }
-        };
-    </script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
