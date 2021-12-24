@@ -529,11 +529,11 @@ gap:1rem;
 }
 
 .skills_css{
-    width: 60%;
+    width: 65%;
 }
 
 .skills_js{
-    width: 55%;
+    width: 60%;
 }
 
 .skills_react{
@@ -541,15 +541,15 @@ gap:1rem;
 }
 
 .skills_firebase{
-    width: 50%;
+    width: 65%;
 }
 
 .skills_node{
-    width: 70%;
+    width: 60%;
 }
 
 .skills_express{
-    width:75%;
+    width:63%;
 }
 
 .skills_mongo{
@@ -557,7 +557,7 @@ gap:1rem;
 }
 
 .skills_devtool{
-    width: 50%;
+    width: 80%;
 }
 
 .skills_vscode{
