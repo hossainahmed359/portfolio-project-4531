@@ -56,16 +56,18 @@
     <!--==================== Preloader JS ====================-->
     <script>
         document.onreadystatechange = function () {
-            document.querySelector("body").style.visibility = "hidden";
-            document.querySelector("#loader").style.visibility = "visible";
 
-            // This is only used for loading the images
-            const timeOut = setTimeout(() => {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
-            }, 3000)
+            if (document.readyState !== 'ready') {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+
+                const timeOut = setTimeout(() => {
+                    document.querySelector(
+                        "#loader").style.display = "none";
+                    document.querySelector(
+                        "body").style.visibility = "visible";
+                }, 3000)
+            }
 
         };
     </script>
