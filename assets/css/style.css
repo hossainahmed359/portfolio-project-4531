@@ -797,7 +797,7 @@ gap:1rem;
     background-size: cover;
     border-radius: 0.5rem;
     justify-self: center;
-    transition: all 3s linear;
+    transition: 3s linear;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
    /*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
 }
