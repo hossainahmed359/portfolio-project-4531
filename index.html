@@ -19,7 +19,12 @@
 
     <!--==================== Preloader CSS ====================-->
     <style>
+        body {
+            visibility: hidden;
+        }
+
         #loader {
+            visibility: visible;
             border: 12px solid hsl(250, 92%, 85%);
             border-radius: 50%;
             border-top: 12px solid hsl(250, 69%, 61%);
@@ -58,9 +63,6 @@
         document.onreadystatechange = function () {
 
             if (document.readyState !== 'ready') {
-                document.querySelector("body").style.visibility = "hidden";
-                document.querySelector("#loader").style.visibility = "visible";
-
                 const timeOut = setTimeout(() => {
                     document.querySelector(
                         "#loader").style.display = "none";

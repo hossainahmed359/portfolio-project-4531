@@ -259,12 +259,9 @@ let typewriter = new Typewriter(text, {
 });
 
 typewriter.typeString('Frontend Developer')
-    .pauseFor(1000)
     .deleteAll()
     .typeString('React Developer')
-    .pauseFor(1000)
     .deleteAll()
-    .typeString('Node js Developer')
-    .pauseFor(1000)
+    .typeString('Node Js Developer')
     .start();
 
